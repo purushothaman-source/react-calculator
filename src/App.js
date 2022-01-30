@@ -77,6 +77,7 @@ function reducer(state, { type, payload }) {
       return {
         ...state,
         currentOperand: state.currentOperand.slice(
+          0,
           state.currentOperand.length - 1
         )
       };
